@@ -11,11 +11,6 @@ A mobile application that displays information about various fruits using the [F
 - Conversion Data Listener integrated for tracking non-organic installs.
 - Simple, intuitive UI for easy browsing and sorting of fruit information.
 
-## Screenshots
-
-![Main Screen](./screenshots/main_screen.png)
-![Sorted by Sugar](./screenshots/sorted_by_sugar.png)
-
 ## API
 
 This app uses the [FruityVice API](https://www.fruityvice.com) to fetch data about fruits such as:
