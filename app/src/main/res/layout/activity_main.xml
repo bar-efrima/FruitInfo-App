@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Sort by text -->
+    <TextView
+        android:id="@+id/sorting_nutrition_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_none"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Filter buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_sugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/button_style"
+            android:text="@string/sugar"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/button_protein"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_style"
+            android:text="@string/protein"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/calories"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- RecyclerView - Displaying the fruits list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Reset button -->
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Claim -->
+    <TextView
+        android:id="@+id/claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/claim"
+        android:textSize="12sp"
+        android:textColor="@color/appsFlyerBlue"
+        />
+
+</LinearLayout>
